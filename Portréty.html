@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Portréty</title>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <style>
+  body {
+ background: #006400	;
+ }
+ 
+    /* Nastavení pro obalující prvek */
+.Galerie_Fotek {
+  display: flex;         /* Toto je to kouzlo, které dá prvky vedle sebe */
+  gap: 20px;             /* Udělá úhlednou mezeru 20 pixelů mezi obrázky */
+  flex-wrap: wrap;       /* Velmi užitečné: pokud je obrazovka moc úzká (např. na mobilu), druhý obrázek automaticky skočí pod první */
+}
+
+/* Jemné stylování samotného popisku (volitelné) */
+figcaption {
+  text-align: center;    /* Vycentruje text popisku pod obrázkem */
+  font-style: italic;    /*Udělá písmo kurzívou */
+  color:  	#ffffff;           /* Změní barvu textu  */
+  margin-top: 8px; /* Přidá malou mezeru mezi fotku a text */
+  font-size:25px;   
+}
+figure {
+      margin: 0;
+    } 
+    .Galerie_Fotek img{ /* definice ze to plati pro obrazek*/
+    border: 5px solid white; /* toto dela rámeček */
+    border-radius: 10px; /* zaoblení fotky*/
+    }
+    .Galerie_Fotek img {
+    transition:transform 0.3s ease; /* čas transformace a ze bude plynula */
+    }
+   .Galerie_Fotek img:hover {
+   transform:scale(1.2); /* zvetseni obrazku na 120 % */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5); /* Na najetí myši stín ještě zvýrazníme */
+    }
+    .Úvodni_Stránka {
+  display: flex;            /* Aktivuje flexbox */
+  width: 100%;             /* Box přes celou šířku */
+  background-color: #333;  /* Barva pozadí menu */
+}
+
+.Úvodni_Stránka a {
+  flex: 1;                 /* Každý odkaz zabere přesně 1/3 místa */
+  text-align: center;      /* Vycentruje text v buňce */
+  padding: 20px 0;         /* Horní a spodní odsazení (výška menu) */
+  color: white;            /* Barva textu */
+  text-decoration: none;   /* Odstraní podtržení odkazů */
+  font-family: "Bookman Old Style";
+  margin:0;; /* Modernější písmo */
+  border-right: 1px solid #555; /* Volitelné: oddělovač mezi buňkami */
+}
+
+/* Odstranění čáry u posledního odkazu */
+.Úvodni_Stránka a:last-child {
+  border-right: none;
+}
+
+/* Efekt při najetí myší */
+.Úvodni_Stránka a:hover {
+  background-color: #555;
+}
+    </style>
+  <body>
+   <nav class="Úvodni_Stránka">
+  <a href="Foto_PRo_Art.html">Foto_PRo_Art</a>
+ 
+</nav>
+  <h1> Moje nejlepší: </h1>
+    <div class="Galerie_Fotek">
+    
+    <figure>
+ <img src ="_MG_5385_Portrét1.jpg" width="400"alt="Čech v Orlím Hnízdě">
+ <figcaption>Čech v Orlím Hnízdě</figcaption>
+ </figure>
+ <figure>
+ <img src="_MG_5528_Portréty2.jpg" width="700" alt="Ať žije 14. století krásy">
+ <figcaption>Ať žije 14. století krásy</figcaption>
+ </figure>
+ <figure>
+  <img src="2E4A3853_Portréty1.jpg" width="700" alt="Trocha lenosti nikdy neškodí">
+ <figcaption>Trocha lenosti nikdy neškodí</figcaption>
+ </figure>
+ 
+    </div>
+
+    <script>
+      // code
+    </script>
+  </body>
+</html>
+
